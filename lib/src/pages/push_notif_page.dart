@@ -33,6 +33,8 @@ class _PushNotifPageState extends State<PushNotifPage> {
   @override
   Widget build(BuildContext context) {
 
+    Future.delayed(Duration(milliseconds: 3000), PushNotificationsController.instance.showNotification );
+
     return Scaffold(
       appBar: new AppBar(
         backgroundColor: Colors.deepPurpleAccent,
